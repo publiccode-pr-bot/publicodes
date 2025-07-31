@@ -27,6 +27,7 @@ export default async function buildDoc(
 		build: {
 			outDir: options.outDir,
 		},
+		base: './',
 		plugins: [
 			{
 				name: 'publicodes-compile',
