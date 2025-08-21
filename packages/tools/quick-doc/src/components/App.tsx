@@ -14,6 +14,7 @@ import Header from './Header'
 import React from 'react'
 
 function RulePageWrapper({ engine }: { engine: Engine }) {
+	console.log(engine.getParsedRules())
 	const { '*': splat } = useParams()
 	return (
 		<RulePage
@@ -34,6 +35,7 @@ export default function App() {
 		documentationPath: '',
 		engine: state.engine,
 	})
+
 	return (
 		<>
 			<BrowserRouter>
